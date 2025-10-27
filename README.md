@@ -1,16 +1,25 @@
-# React + Vite
+# 🌐 My Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website — a showcase of my projects, skills, and experiences as a developer.  
+This site serves as both my professional profile and a demonstration of my design and development abilities.
 
-Currently, two official plugins are available:
+<!-- ## 🚀 Live Demo -->
+<!-- 🔗 [View Portfolio](https://link.com) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍💻 About Me
+Hi! I'm **Joshua Razzi B. Garingo**, a passionate **Software Developer**.  
+I enjoy building creative, user-centered, and efficient digital solutions using modern technologies.  
+This portfolio highlights my work, skills, and projects that reflect my growth as a developer.
 
-## React Compiler
+## 🛠️ Built With
+This project was developed using the following technologies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ **Vite** — fast and modern frontend tooling  
+- ⚛️ **React** — for building interactive UIs  
+- 🎨 **Tailwind CSS** — for responsive and clean design  
+- 💻 **Node.js** — for development environment  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contact Me
+If you'd like to collaborate or just say hi 👋, feel free to reach out:  
+**Email:** joshuarazzigaringo@gmail.com  
+**LinkedIn:** linkedin.com/in/jrgaringo  
