@@ -8,14 +8,14 @@ function App() {
 
     return (
         <>
-            {/* {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>} */}
-            {!isLoaded ? (
+            {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}
+            {/* {!isLoaded ? (
                 <LoadingScreen onComplete={() => setIsLoaded(true)} />
             ) : (
                 <div className="text-center text-white mt-20 inter-medium">
                     <h1>IS THIS INTER????</h1>
                 </div>
-            )}
+            )} */}
         </>
     );
 }
