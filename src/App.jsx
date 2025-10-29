@@ -15,9 +15,10 @@ function App() {
     return (
         <>
             {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-            <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? 'opapcity-100' : 'opacity-0'} bg-black text-gray-100`}>
+            <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'} bg-black text-gray-100`}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-                <HomeScreen />
+                <div className='h-screen' >this is a divvvvv</div>
+                <HomeScreen/>
                 <AboutScreen />
                 <ContactScreen />
                 <ProjectScreen />
