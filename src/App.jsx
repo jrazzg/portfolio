@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './App.css'
 import LoadingScreen from './components/LoadingScreen';
 import './index.css';
-import HomeScreen from './components/sections/Home';
-import AboutScreen from './components/sections/About';
-import ContactScreen from './components/sections/Contact';
-import ProjectScreen from './components/sections/Projects';
+import Home from './components/sections/Home';
+import About from './components/sections/About';
+import Contact from './components/sections/Contact';
+import Project from './components/sections/Projects';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
 
@@ -20,10 +20,10 @@ function App() {
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <div className='h-screen' >this is a divvvvv</div>
-                <HomeScreen/>
-                <AboutScreen />
-                <ContactScreen />
-                <ProjectScreen />
+                <Home/>
+                <About />
+                <Contact />
+                <Project />
 
             </div>
         </>

@@ -1,8 +1,8 @@
-const ContactScreen = () => {
+const Contact = () => {
     return (
         <>
             <div>This is CONTACT screen</div>
         </>
     )
 }
-export default ContactScreen
+export default Contact

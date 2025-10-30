@@ -1,8 +1,8 @@
-const ProjectScreen = () => {
+const Project = () => {
     return (
         <>
             <div>Project Screen</div>
         </>
     )
 }
-export default ProjectScreen
+export default Project
