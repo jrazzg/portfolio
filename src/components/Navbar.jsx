@@ -8,7 +8,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     return (
         <div className="flex justify-center">
             <nav className="fixed top-5 w-[60%] px-4 rounded-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-                <div className="max-w-5xl mx-auto px-4">
+                <div className="mx-auto px-4"> 
                     <div className="flex justify-between items-center h-16">
                         <a href="#home" className="text-xl text-white inter-bold">jrazzg</a>
 
