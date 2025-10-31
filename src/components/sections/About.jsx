@@ -39,7 +39,27 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4">Education</h3>
+                            <ul className="list-disc list-inside text-gray-300 space-y-2">
+                                <li>
+                                    <strong>BS Computer Science</strong> - Notre Dame of Dadiangas University 
+                                    (2021-2025)
+                                </li>
+                                <li>Relevant Coursework: Datastructures, Web Developpment, Cloud Computing.</li>
+                            </ul>
+                        </div>
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4">Work Experience</h3>
+                            <div className="space-y-4 text-gray-300">
+                                <div>
+                                    <h4 className="font-bold">IT Intern at Dole Philippines, Inc. (July 2024 - August 2024)</h4>
+                                    <p>Develop and maintained internal systems including AutoCap and HR-Pro2e.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
