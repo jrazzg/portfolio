@@ -3,7 +3,7 @@ import './App.css'
 import LoadingScreen from './components/LoadingScreen';
 import './index.css';
 import Home from './components/sections/Home';
-import About from './components/sections/About';
+import AboutNew from './components/sections/AboutNew';
 import Contact from './components/sections/Contact';
 import Project from './components/sections/Projects';
 import Navbar from './components/Navbar';
@@ -20,7 +20,7 @@ function App() {
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <Home/>
-                <About />
+                <AboutNew/>
                 <Project />
                 <Contact />
 
