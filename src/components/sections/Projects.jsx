@@ -9,11 +9,12 @@ const Projects = () => {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], ["3%", "-50%"]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
     return (
         <section ref={targetRef} className="relative h-[50vh] overflow-visible">
             <motion.div
-                style={{ y }}
+                style={{ y, scale }}
                 className="h-full flex justify-center"
             >
                 <div className="flex flex-1 max-w-6xl">
