@@ -19,16 +19,15 @@ function App() {
         <>
             {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
             <ReactLenis root />
-            <div className={`min-h-screen transition-opacity duration-700 scroll-smooth snap-y snap-mandatory 
-                            ${isLoaded ? 'opacity-100' : 'opacity-0'} bg-black text-gray-100`}>
+            <div className={`min-h-screen transition-opacity duration-700
+                            ${isLoaded ? 'opacity-100' : 'opacity-0'} bg-black text-gray-100 relative`}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
                 <ProjectsTransition />
                 <Projects />
                 <About />
-                <Contact />
-
+                <Contact/>
             </div>
         </>
     );
