@@ -19,32 +19,32 @@ const Projects = () => {
             >
                 <div className="flex flex-1 max-w-6xl">
                     {/* JPG ATTENDANCE */}
-                    <div className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
+                    <a href="#" className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
                         <h3 className="text-xl font-bold mb-1">JPG Attendance</h3>
                         <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
                                                 hover:bg-orange-500/20 transition uppercase"
                         >
                             mobile
                         </span>
-                    </div>
+                    </a>
                     {/* NDDU ATTENDANCE */}
-                    <div className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
+                    <a href="#" className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
                         <h3 className="text-xl font-bold mb-1">NDDU Attendance</h3>
                         <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
                                                 hover:bg-orange-500/20 transition uppercase"
                         >
                             web
                         </span>
-                    </div>
+                    </a>
                     {/* BLAAN APP */}
-                    <div className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
+                    <a href="#" className="flex-1 m-6 p-6 rounded-xl border bg-black border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all">
                         <h3 className="text-xl font-bold mb-1">Blaan App</h3>
                         <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
                                                 hover:bg-orange-500/20 transition uppercase"
                         >
                             mobile
                         </span>
-                    </div>
+                    </a>
                 </div>
             </motion.div>
         </section>
