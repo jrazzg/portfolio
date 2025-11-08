@@ -4,6 +4,29 @@ import isoUlt from "../../assets/videos/iso_ult.mp4"
 import neonUlt from "../../assets/videos/neon_ult.mp4"
 import sovaUlt from "../../assets/videos/sova_ult.mp4"
 
+const ProjectCard = ({ name, vidSource, platform }) => {
+    return (
+        <a href="#" className="relative flex-1 items-end m-6 rounded-xl border border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all overflow-hidden">
+            <video
+                src={vidSource}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover z-0"
+            />
+            <div className="text-center absolute bottom-0 right-0 left-0 z-10 p-6 bg-linear-to-t from-black/90 to-transparent">
+                <h3 className="text-xl font-bold mb-1">{name}</h3>
+                <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
+                                                hover:bg-orange-500/20 transition uppercase"
+                >
+                    {platform}
+                </span>
+            </div>
+        </a>
+    );
+}
+
 const Projects = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -21,63 +44,9 @@ const Projects = () => {
                 className="h-full flex justify-center"
             >
                 <div className="flex flex-1 max-w-6xl">
-                    {/* JPG ATTENDANCE */}
-                    <a href="#" className="relative flex-1 items-end m-6 rounded-xl border border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all overflow-hidden">
-                        <video
-                            src={isoUlt}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="absolute inset-0 w-full h-full object-cover z-0"
-                        />
-                        <div className="text-center absolute bottom-0 right-0 left-0 z-10 p-6 bg-linear-to-t from-black/90 to-transparent">
-                            <h3 className="text-xl font-bold mb-1">JPG Attendance</h3>
-                            <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
-                                                hover:bg-orange-500/20 transition uppercase"
-                            >
-                                mobile
-                            </span>
-                        </div>
-                    </a>
-                    {/* NDDU ATTENDANCE */}
-                    <a href="#" className="relative flex-1 items-end m-6 rounded-xl border border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all overflow-hidden">
-                        <video
-                            src={neonUlt}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="absolute inset-0 w-full h-full object-cover z-0"
-                        />
-                        <div className="text-center absolute bottom-0 right-0 left-0 z-10 p-6 bg-linear-to-t from-black/90 to-transparent">
-                            <h3 className="text-xl font-bold mb-1">NDDU Attendance</h3>
-                            <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
-                                                hover:bg-orange-500/20 transition uppercase"
-                            >
-                                web
-                            </span>
-                        </div>
-                    </a>
-                    {/* BLAAN APP */}
-                    <a href="#" className="relative flex-1 items-end m-6 rounded-xl border border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all overflow-hidden">
-                        <video
-                            src={sovaUlt}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="absolute inset-0 w-full h-full object-cover z-0"
-                        />
-                        <div className="text-center absolute bottom-0 right-0 left-0 z-10 p-6 bg-linear-to-t from-black/90 to-transparent">
-                            <h3 className="text-xl font-bold mb-1">Blaan App</h3>
-                            <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
-                                                hover:bg-orange-500/20 transition uppercase"
-                            >
-                                mobile
-                            </span>
-                        </div>
-                    </a>
+                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
+                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" />
+                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" />
                 </div>
             </motion.div>
         </section>
