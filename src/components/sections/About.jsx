@@ -6,7 +6,7 @@ const About = () => {
     const backendSkills = ['Python', 'C++', 'Firebase'];
 
     return (
-        <section id="home" className="min-h-[50vh] w-[60%] flex flex-col mx-auto">
+        <section id="home" className="min-h-[65vh] w-[60%] flex flex-col mx-auto">
             <h2 className="uppercase tracking-widest mb-6">Beyond the projects &mdash;</h2>
             <RevealOnScroll><h1 className="text-7xl text-orange-600">Developer by choice.</h1></RevealOnScroll>
             <RevealOnScroll><h1 className="text-7xl text-orange-600">Creator by nature.</h1></RevealOnScroll>
