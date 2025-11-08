@@ -5,11 +5,11 @@ import './index.css';
 import Home from './components/sections/Home';
 import ProjectsTransition from './components/sections/ProjectsTransition';
 import Contact from './components/sections/Contact';
-import ProjectsStatic from './components/sections/ProjectsStatic';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
 import Projects from './components/sections/Projects';
-import { ReactLenis } from 'lenis/react'
+import About from './components/sections/About';
+import { ReactLenis } from 'lenis/react';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -26,7 +26,7 @@ function App() {
                 <Home />
                 <ProjectsTransition />
                 <Projects />
-                <ProjectsStatic />
+                <About />
                 <Contact />
 
             </div>
