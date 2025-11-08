@@ -8,21 +8,28 @@ import Contact from './components/sections/Contact';
 import Project from './components/sections/Projects';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
+import Sandbox from './components/sections/Sanbox';
+import { ReactLenis, useLenis } from 'lenis/react'
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const lenis = useLenis((lenis) => {
+        console.log(lenis)
+    })
 
     return (
         <>
             {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+            <ReactLenis root />
             <div className={`min-h-screen transition-opacity duration-700 scroll-smooth snap-y snap-mandatory 
                             ${isLoaded ? 'opacity-100' : 'opacity-0'} bg-black text-gray-100`}>
-                <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-                <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-                <Home/>
-                <HorizontalProject className="overflow-y-hidden"/>
+                <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Home />
+                <HorizontalProject />
                 <Project />
+                <Sandbox />
                 <Contact />
 
             </div>
