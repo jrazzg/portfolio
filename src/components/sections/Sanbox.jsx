@@ -5,16 +5,16 @@ const Sandbox = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start start", "end end"]
+        offset: ["start 200%", "end end"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["3%", "-50%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[50vh]">
+        <section ref={targetRef} className="relative h-[50vh] overflow-visible">
             <motion.div
                 style={{ y }}
-                className="h-full flex justify-center"
+                className="h-full flex justify-center pointer-events-none"
             >
                 <div className="flex flex-1 max-w-6xl">
                     {/* JPG ATTENDANCE */}

@@ -4,7 +4,7 @@ import { useRef } from "react";
 const HorizontalProject = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
-    const x = useTransform(scrollYProgress, [0, 1], ["3%", "-75%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["3%", "-70%"]);
 
     return (
         <section ref={targetRef} className="relative h-[300vh] bg-orange-600">
