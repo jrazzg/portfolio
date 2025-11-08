@@ -25,8 +25,8 @@ function App() {
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
                 <HorizontalProject />
-                <Project />
                 <Sandbox />
+                <Project />
                 <Contact />
 
             </div>
