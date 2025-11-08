@@ -3,12 +3,12 @@ import './App.css'
 import LoadingScreen from './components/LoadingScreen';
 import './index.css';
 import Home from './components/sections/Home';
-import HorizontalProject from './components/sections/HorizontalProject';
+import ProjectsTransition from './components/sections/ProjectsTransition';
 import Contact from './components/sections/Contact';
-import Project from './components/sections/Projects';
+import ProjectsStatic from './components/sections/ProjectsStatic';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
-import Sandbox from './components/sections/Sanbox';
+import Projects from './components/sections/Projects';
 import { ReactLenis } from 'lenis/react'
 
 function App() {
@@ -24,9 +24,9 @@ function App() {
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
-                <HorizontalProject />
-                <Sandbox />
-                <Project />
+                <ProjectsTransition />
+                <Projects />
+                <ProjectsStatic />
                 <Contact />
 
             </div>
