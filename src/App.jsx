@@ -14,9 +14,6 @@ import { ReactLenis, useLenis } from 'lenis/react'
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const lenis = useLenis((lenis) => {
-        console.log(lenis)
-    })
 
     return (
         <>
