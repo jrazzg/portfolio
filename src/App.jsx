@@ -9,7 +9,7 @@ import Project from './components/sections/Projects';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
 import Sandbox from './components/sections/Sanbox';
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis } from 'lenis/react'
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
