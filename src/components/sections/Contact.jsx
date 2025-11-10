@@ -6,7 +6,7 @@ import linkedinIcon from "../../assets/icons/linkedin.svg"
 const Contact = () => {
     return (
         <div className="min-h-[40vh] w-[60%] flex flex-col py-30 mx-auto">
-            <RevealOnScroll><h1 className="text-7xl text-black mb-6">Let's build something together.</h1></RevealOnScroll>
+            <RevealOnScroll><h1 className="text-7xl text-white mb-6">Let's build something together.</h1></RevealOnScroll>
             <div className="flex tracking-widest text-white">
                 <a
                     href="mailto:joshuarazzi.garingo@gmail.com"
