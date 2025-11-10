@@ -18,15 +18,17 @@ function App() {
     return (
         <>
             <ReactLenis root />
-            <div className={"min-h-screen transition-opacity duration-700 bg-black text-gray-100 relative"}>
+            <div className={"min-h-screen transition-opacity duration-700 bg-black text-white relative z-10"}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
                 <ProjectsTransition />
                 <Projects />
                 <About />
-                <Contact/>
             </div>
+            <footer className='sticky bottom-0 left-0'>
+                 <Contact/>
+            </footer>
         </>
     );
 }
