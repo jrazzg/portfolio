@@ -26,7 +26,7 @@ function App() {
                 <Projects />
                 <About />
             </div>
-            <footer className='sticky bottom-0 left-0'>
+            <footer className='sticky bottom-0 bg-orange-600'>
                  <Contact/>
             </footer>
         </>
