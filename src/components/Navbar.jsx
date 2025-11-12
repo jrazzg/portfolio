@@ -17,13 +17,13 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                     &#9776;
                 </div>
                 <div className="hidden md:flex items-center space-x-3">
-                    <a href="#contact" className="text-white hover:bg-orange-600 transition-all 
-                                                            px-5 py-2 rounded-full backdrop-blur-lg">VIEW RESUME</a>
-                    <a href="#contact" className="text-black hover:text-white hover:bg-orange-600 transition-all
-                                                            px-5 py-2 rounded-full bg-white backdrop-blur-lg">LET'S TALK</a>
+                    <a  href="#contact" 
+                        className="text-white hover:bg-orange-600 transition-all px-5 py-2 backdrop-blur-lg">VIEW RESUME</a>
+                    <a  href="mailto:joshuarazzi.garingo@gmail.com" 
+                        className="text-black hover:text-white hover:bg-orange-600 transition-all px-5 py-2 bg-white backdrop-blur-lg">LET'S TALK</a>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 export default Navbar;
