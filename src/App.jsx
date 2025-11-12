@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css'
-import LoadingScreen from './components/LoadingScreen';
 import './index.css';
 import Home from './components/sections/Home';
 import ProjectsTransition from './components/sections/ProjectsTransition';
@@ -12,7 +11,6 @@ import About from './components/sections/About';
 import { ReactLenis } from 'lenis/react';
 
 function App() {
-    const [isLoaded, setIsLoaded] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
