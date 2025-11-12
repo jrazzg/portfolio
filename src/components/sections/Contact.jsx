@@ -44,7 +44,7 @@ const Contact = () => {
         <>
             <div className="relative overflow-hidden">
                 <motion.section style={{ backgroundImage }} className="relative min-h-[40vh] p-[20%] flex flex-col py-30 mx-auto z-10">
-                    <RevealOnScroll><h1 className="text-7xl text-black mb-6 tracking-tight z-20">Let's build something together.</h1></RevealOnScroll>
+                    <RevealOnScroll><h1 className="text-7xl tracking-tight leading-[.9] pb-3 bg-linear-to-r font-bold from-black to-black/80 bg-clip-text text-transparent mb-6 z-20">Let's build something together.</h1></RevealOnScroll>
                     <div className="flex tracking-widest text-black font-semibold z-20">
                         <a
                             href="mailto:joshuarazzi.garingo@gmail.com"
