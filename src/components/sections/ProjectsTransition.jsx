@@ -10,7 +10,7 @@ const PorjecstTransition = () => {
         <section ref={targetRef} className="relative h-[300vh] bg-orange-600">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex">
-                    <h1 className="text-[15rem] text-black whitespace-nowrap">Crafting ideas into interactive experiences.</h1>
+                    <h1 className="text-[15rem] text-black tracking-tight whitespace-nowrap">Crafting ideas into interactive experiences.</h1>
                 </motion.div>
             </div>
         </section>
