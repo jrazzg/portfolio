@@ -40,36 +40,38 @@ const Contact = () => {
     }, []);
 
     return (
-        <motion.section style={{ backgroundImage }} className="min-h-[40vh] p-[20%] flex flex-col py-30 mx-auto">
-            <RevealOnScroll><h1 className="text-7xl text-black mb-6">Let's build something together.</h1></RevealOnScroll>
-            <div className="flex tracking-widest text-black font-semibold">
-                <a
-                    href="mailto:joshuarazzi.garingo@gmail.com"
-                    className="mr-8 flex items-center gap-2 text-lg -tracking-normal"
-                >
-                    <img src={emailIcon} alt="email-icon" className="inline-block h-[2em] w-[2em]" />
-                    joshuarazzi.garingo@gmail.com
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/jrgaringo/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 mr-8 text-lg -tracking-normal"
-                >
-                    <img src={linkedinIcon} alt="linkedin-icon" className="inline-block h-[2em] w-[2em]" />
-                    LinkedIn
-                </a>
-                <a
-                    href="https://github.com/jrazzg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-lg -tracking-normal"
-                >
-                    <img src={githubIcon} alt="email-icon" className="inline-block h-[2em] w-[2em]" />
-                    GitHub
-                </a>
-            </div>
-        </motion.section>
+        <>
+            <motion.section style={{ backgroundImage }} className="min-h-[40vh] p-[20%] flex flex-col py-30 mx-auto">
+                <RevealOnScroll><h1 className="text-7xl text-black mb-6 tracking-tight">Let's build something together.</h1></RevealOnScroll>
+                <div className="flex tracking-widest text-black font-semibold">
+                    <a
+                        href="mailto:joshuarazzi.garingo@gmail.com"
+                        className="mr-5 flex items-center gap-2 text-lg -tracking-normal duration-500 hover:bg-white pr-2"
+                    >
+                        <img src={emailIcon} alt="email-icon" className="inline-block h-[2em] w-[2em]" />
+                        joshuarazzi.garingo@gmail.com
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jrgaringo/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-5 flex items-center gap-2 text-lg -tracking-normal duration-500 hover:bg-white pr-2"
+                    >
+                        <img src={linkedinIcon} alt="linkedin-icon" className="inline-block h-[2em] w-[2em]" />
+                        LinkedIn
+                    </a>
+                    <a
+                        href="https://github.com/jrazzg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-lg -tracking-normal duration-500 hover:bg-white pr-2"
+                    >
+                        <img src={githubIcon} className="inline-block h-[2em] w-[2em]" />
+                        GitHub
+                    </a>
+                </div>
+            </motion.section>
+        </>
     )
 }
 export default Contact
