@@ -4,11 +4,11 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="h-screen flex items-center mx-auto"
+            className="h-screen px-[20%] pb-10 flex items-center mx-auto"
         >
-            <div className='px-[20%] space-y-3 text-center'>
-                <RevealOnScroll><h1 className="uppercase tracking-widest mb-6 text-white">Hey, I'm Razzi.</h1></RevealOnScroll>
-                <RevealOnScroll><h2 className="text-7xl tracking-tight bg-linear-to-b from-orange-700 to-orange-600 bg-clip-text text-transparent">I turn ideas into software, and errors into lessons.</h2></RevealOnScroll>
+            <div className='flex flex-col px-5'>
+                <RevealOnScroll><h1 className="uppercase tracking-widest text-white">Hey. I'm Razzi.</h1></RevealOnScroll>
+                <RevealOnScroll><h1 className="text-7xl tracking-tight bg-linear-to-r text-orange-700">I turn ideas into software, and errors into lessons.</h1></RevealOnScroll>
             </div>
         </section>
     )
