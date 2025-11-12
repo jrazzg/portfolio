@@ -6,8 +6,8 @@ import linkedinIcon from "../../assets/icons/linkedin.svg"
 const Contact = () => {
     return (
         <div className="min-h-[40vh] w-[60%] flex flex-col py-30 mx-auto">
-            <RevealOnScroll><h1 className="text-7xl text-white mb-6">Let's build something together.</h1></RevealOnScroll>
-            <div className="flex tracking-widest text-white">
+            <RevealOnScroll><h1 className="text-7xl text-black mb-6">Let's build something together.</h1></RevealOnScroll>
+            <div className="flex tracking-widest text-black font-semibold">
                 <a
                     href="mailto:joshuarazzi.garingo@gmail.com"
                     className="mr-8 flex items-center gap-2 text-lg -tracking-normal"
@@ -30,7 +30,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-lg -tracking-normal"
                 >
-                    <img src={githubIcon} alt="email-icon" className="inline-block h-[2em] w-[2em] fill-white" />
+                    <img src={githubIcon} alt="email-icon" className="inline-block h-[2em] w-[2em]" />
                     GitHub
                 </a>
             </div>
