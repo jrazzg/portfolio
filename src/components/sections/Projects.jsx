@@ -31,17 +31,17 @@ const Projects = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start 200%", "end end"]
+        offset: ["start end", "start start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["3%", "-50%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["3%", "10%"]);
     const scale = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
     return (
-        <section ref={targetRef} className="relative h-[50vh] overflow-visible">
+        <section ref={targetRef} className="relative h-screen overflow-visible bg-white">
             <motion.div
                 style={{ y, scale }}
-                className="h-full flex justify-center"
+                className="h-[70vh] flex justify-center"
             >
                 <div className="flex flex-1 max-w-6xl">
                     <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
