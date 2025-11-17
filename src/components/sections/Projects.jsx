@@ -6,7 +6,11 @@ import sovaUlt from "../../assets/videos/sova_ult.mp4"
 
 const ProjectCard = ({ name, vidSource, platform }) => {
     return (
-        <a href="#" className="relative flex-1 items-end m-6 rounded-xl border border-white/10 hover:-translate-y-5 hover:border-orange-500/30 transition-all overflow-hidden">
+        <a href="#" className="relative flex-1 items-end rounded-[20px] border-8 border-white/10 
+                                duration-500
+                                hover:-translate-y-10 
+                                hover:border-orange-500/30 
+                                transition-all overflow-hidden">
             <video
                 src={vidSource}
                 autoPlay
@@ -31,19 +35,19 @@ const Projects = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start end", "start start"]
+        offset: ["start end", "center center"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["3%", "10%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["-20%", "0%"]);
     const scale = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
     return (
-        <section ref={targetRef} className="relative h-screen overflow-visible bg-white">
+        <section ref={targetRef} className="relative h-screen overflow-hidden bg-gray-500 flex items-center justify-center">
             <motion.div
                 style={{ y, scale }}
-                className="h-[70vh] flex justify-center"
+                className="flex justify-center items-center"
             >
-                <div className="flex flex-1 max-w-6xl">
+                <div className="flex flex-1 min-w-6xl w-full gap-6 h-[70vh]">
                     <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
                     <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" />
                     <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" />
