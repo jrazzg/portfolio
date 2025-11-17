@@ -42,12 +42,12 @@ const Projects = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
     return (
-        <section ref={targetRef} className="relative h-screen overflow-hidden bg-gray-500 flex items-center justify-center">
+        <section ref={targetRef} className="relative h-screen overflow-hidden flex items-center justify-center">
             <motion.div
                 style={{ y, scale }}
                 className="flex justify-center items-center"
             >
-                <div className="flex flex-1 min-w-6xl w-full gap-6 h-[70vh]">
+                <div className="flex flex-1 w-290 gap-10 h-[70vh]">
                     <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
                     <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" />
                     <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" />
