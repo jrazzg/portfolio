@@ -20,10 +20,16 @@ const Home = () => {
                 </RevealOnScroll>
             </div>
             <div className="px-8 uppercase tracking-[0.2em] text-sm font-light flex justify-between items-center">
-                <div className="flex-1 text-left">the journey continues below</div>
-                <div className="flex-1 text-center">Inspired by curiosity, driven by code</div>
-                <div className="flex-1 text-right">
-                    <a href="#horizontal" className="w-8 h-8 inline-block bg-white text-black text-center">@</a>
+                <div className="hidden md:block flex-1 text-left">the journey continues below</div>
+                <div className="hidden md:block flex-1 text-center">Inspired by curiosity, driven by code</div>
+                <div className="flex-1 text-right ">
+                    <div className='inline-block'>
+                        <a href="#horizontal"
+                            className='w-8 h-8 bg-white text-black justify-center flex items-center
+                                      hover:bg-orange-600 duration-500'
+                        >↓</a>
+                    </div>
+
                 </div>
             </div>
 
