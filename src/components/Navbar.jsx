@@ -26,15 +26,15 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </nav >
 
-            <div className="w-full h-1 fixed top-20 z-40 
-                            bg-red-500        /* default for mobile */
-                            sm:bg-orange-500  /* small screens */
-                            md:bg-yellow-500  /* medium screens */
-                            lg:bg-green-500   /* large screens */
-                            xl:bg-blue-500    /* extra large screens */
-                            transition-colors duration-500">
-            </div>
         </>
     );
 };
 export default Navbar;
+            // <div className="w-full h-1 fixed top-20 z-40 
+            //                 bg-red-500        /* default for mobile */
+            //                 sm:bg-orange-500  /* small screens */
+            //                 md:bg-yellow-500  /* medium screens */
+            //                 lg:bg-green-500   /* large screens */
+            //                 xl:bg-blue-500    /* extra large screens */
+            //                 transition-colors duration-500">
+            // </div>
