@@ -8,7 +8,7 @@ const PorjectsTransition = () => {
 
     return (
         // <section ref={targetRef} className="relative h-[300vh]" style={{ backgroundImage: 'linear-gradient(to bottom, #f54900, #ff6b1a, #b93400, black)', }}>
-        <section ref={targetRef} className="relative h-[300vh] bg-black">
+        <section id="horizontal" ref={targetRef} className="relative h-[300vh] bg-black">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex">
                     <h1 className="text-[18rem] tracking-tight whitespace-nowrap">
