@@ -6,11 +6,13 @@ import sovaUlt from "../../assets/videos/sova_ult.mp4"
 
 const ProjectCard = ({ name, vidSource, platform }) => {
     return (
-        <a href="#" className="relative flex-1 items-end rounded-[20px] border-10 border-white/10 
+        <a href="#" className="relative flex-1 items-end rounded-[20px] border-10 border-white/10
+                                shadow-xl
                                 duration-500
                                 backdrop-blur-sm
                                 hover:-translate-y-10 
-                                hover:border-orange-500/30 
+                                hover:border-white/20 
+                                hover:shadow-2xl
                                 transition-all overflow-hidden">
             <video
                 src={vidSource}
@@ -43,7 +45,7 @@ const Projects = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
-        <section ref={targetRef} className="relative overflow-visible flex items-center justify-center bg-linear-to-t from-orange-700 via-orange-500/60 to-black">
+        <section ref={targetRef} className="relative overflow-visible flex items-center justify-center bg-linear-to-t from-orange-600 via-orange-500/80 to-black">
             <motion.div
                 style={{ y, scale }}
                 className="flex justify-center items-center"
