@@ -4,7 +4,7 @@ import { useRef } from "react";
 const PorjectsTransition = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
-    const x = useTransform(scrollYProgress, [0, 1], ["3%", "-80%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["3%", "-70%"]);
 
     return (
         // <section ref={targetRef} className="relative h-[300vh]" style={{ backgroundImage: 'linear-gradient(to bottom, #f54900, #ff6b1a, #b93400, black)', }}>
