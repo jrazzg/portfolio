@@ -45,7 +45,7 @@ const Projects = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
-        <section ref={targetRef} className="relative overflow-visible flex items-center justify-center bg-linear-to-t from-orange-600 via-orange-500/80 to-black">
+        <section ref={targetRef} className="relative overflow-visible flex items-center justify-center bg-linear-to-b from-orange-600 to-black">
             <motion.div
                 style={{ y, scale }}
                 className="flex justify-center items-center"

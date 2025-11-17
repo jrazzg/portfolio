@@ -7,8 +7,8 @@ const PorjectsTransition = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["3%", "-70%"]);
 
     return (
-        // <section ref={targetRef} className="relative h-[300vh]" style={{ backgroundImage: 'linear-gradient(to bottom, #f54900, #ff6b1a, #b93400, black)', }}>
-        <section id="horizontal" ref={targetRef} className="relative h-[300vh] bg-black">
+        <section ref={targetRef} className="relative h-[300vh]" style={{ backgroundImage: 'linear-gradient(to bottom, #4c1600, #b93400, #ff6b1a, #f34900)', }}>
+        {/* <section id="horizontal" ref={targetRef} className="relative h-[300vh] bg-black"> */}
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex">
                     <h1 className="text-[18rem] tracking-tight whitespace-nowrap">
