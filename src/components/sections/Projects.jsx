@@ -45,7 +45,11 @@ const Projects = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
-        <section ref={targetRef} className="relative overflow-visible flex items-center justify-center">
+        <section 
+            ref={targetRef} 
+            className="relative overflow-visible flex items-center justify-center"
+            style={{ backgroundImage: 'linear-gradient(to bottom, #ff5900, 30%, #0b0b0b 70%)', }}
+            >
             <motion.div
                 style={{ y, scale }}
                 className="flex justify-center items-center"
