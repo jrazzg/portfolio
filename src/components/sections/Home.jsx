@@ -9,9 +9,16 @@ const Home = () => {
             <div className='flex flex-col px-10'>
                 <div className='flex justify-between relative'>
                     <RevealOnScroll>
-                        <h1 className="text-[18em] tracking-tighter leading-[0.8] text-[#ff5900]">Software<br/>Developer</h1>
+                        <h1 className="text-[18em] tracking-tighter leading-[0.8] text-[#ff5900]">Software<br />Developer</h1>
                     </RevealOnScroll>
-                    <RevealOnScroll><p className="absolute bottom-3 right-0 tracking-normal text-right">myemail@rzi.com<br/>linkedIn<br/>github</p></RevealOnScroll>
+                    <RevealOnScroll>
+                        <div className="absolute flex flex-col gap-2 bottom-4 right-0 text-right">
+                            <p className='text-white/40 ibm-mono uppercase'>// contact</p>
+                            <a href="" className='hover:text-[#ff5900] duration-500'>joshuarazzi.garingo@gmail.com</a>
+                            <a href="" className='hover:text-[#ff5900] duration-500'>LinkedIn</a>
+                            <a href="" className='hover:text-[#ff5900] duration-500'>GitHub</a>
+                        </div>
+                    </RevealOnScroll>
                 </div>
             </div>
         </section>
