@@ -15,7 +15,7 @@ function App() {
     return (
         <>
             <ReactLenis root />
-            <div className={"min-h-screen transition-opacity duration-700 bg-black text-white relative z-10"}>
+            <div className={"min-h-screen transition-opacity duration-700 bg-[#0b0b0b] text-white relative z-10"}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
