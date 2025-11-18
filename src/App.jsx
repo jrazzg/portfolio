@@ -9,12 +9,14 @@ import MobileMenu from './components/MobileMenu';
 import Projects from './components/sections/Projects';
 import About from './components/sections/About';
 import { ReactLenis } from 'lenis/react';
+import CursorFollower from "./components/CursorFollower.jsx";
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <>
             <ReactLenis root />
+            <CursorFollower />
             <div className={"min-h-screen transition-opacity duration-700 bg-[#0b0b0b] text-white relative z-10"}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -30,4 +32,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
