@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const PorjectsTransition = () => {
+const ProjectsTransition = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
     const x = useTransform(scrollYProgress, [0, 1], ["3%", "-70%"]);
@@ -21,5 +21,5 @@ const PorjectsTransition = () => {
     );
 };
 
-export default PorjectsTransition;
+export default ProjectsTransition;
 
