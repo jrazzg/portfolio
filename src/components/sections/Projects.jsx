@@ -23,9 +23,9 @@ const ProjectCard = ({ name, vidSource, platform }) => {
                 className="absolute inset-0 w-full h-full object-cover z-0"
             />
             <div className="text-center absolute bottom-0 right-0 left-0 z-10 p-6 bg-linear-to-t from-black/90 to-transparent">
-                <h3 className="text-xl font-bold mb-1">{name}</h3>
+                <h3 className="text-2xl font-bold mb-1">{name}</h3>
                 <span className="bg-orange-500/10 text-orange-600 py-1 px-3 rounded-full text-sm
-                                                hover:bg-orange-500/20 transition uppercase"
+                                                hover:bg-orange-500/20 transition uppercase ibm-mono"
                 >
                     {platform}
                 </span>
