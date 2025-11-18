@@ -17,9 +17,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                     <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
                         &#9776;
                     </div>
-                    <div className="hidden md:flex items-center space-x-3">
+                    <div className="hidden md:flex items-center ibm-mono space-x-3">
                         <a href="#contact"
-                            className="text-white  hover:bg-orange-600 hover:text-black duration-500 transition-all px-5 py-2 backdrop-blur-lg">VIEW RESUME</a>
+                            className="text-white hover:bg-orange-600 hover:text-black duration-500 transition-all px-5 py-2 backdrop-blur-lg">VIEW RESUME</a>
                         <a href="mailto:joshuarazzi.garingo@gmail.com"
                             className="text-black hover:bg-orange-600 duration-500 transition-all px-5 py-2 bg-white backdrop-blur-lg">LET'S TALK</a>
                     </div>
