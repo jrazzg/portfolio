@@ -48,7 +48,7 @@ const Projects = () => {
         <section 
             ref={targetRef} 
             className="relative overflow-visible flex items-center justify-center"
-            style={{ backgroundImage: 'linear-gradient(to bottom, #ff5900, 30%, #0b0b0b 70%)', }}
+            style={{ backgroundImage: 'linear-gradient(to bottom, #ff5900, #0b0b0b 70%)', }}
             >
             <motion.div
                 style={{ y, scale }}
