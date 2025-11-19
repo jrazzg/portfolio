@@ -15,7 +15,7 @@ const ProjectsTransition = () => {
                         into <span className="inline-block decoration-white underline">interactive experiences.</span>
                     </h1>
                 </motion.div>
-                <h1 className="text-5xl  tracking-tight font-medium leading-[0.9]">
+                <h1 className="text-5xl tracking-tight font-medium leading-[0.9]">
                     Crafting <span className="inline-block bg-white text-5xl text-[#0b0b0b] mr-[1vw]">ideas</span>
                     into <span className="inline-block decoration-white underline">interactive experiences.</span>
                 </h1>
