@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import Logo from "../assets/logo.svg?react";
 
-const Navbar = ({ menuOpen, setMenuOpen }) => {
-    useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
-    }, [menuOpen]);
-
+const Navbar = () => {
     return (
         <>
             <nav className="fixed w-full py-5 px-6 sm:px-10 z-40 backdrop-blur-sm">
@@ -13,25 +8,14 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                     <a href="#home">
                         <Logo className="w-10 h-10 fill-white hover:w-12 duration-500" />
                     </a>
-                    <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
-                        &#9776;
-                    </div>
-                    <div className="hidden md:flex items-center ibm-mono space-x-3">
+                    <div className="flex items-center ibm-mono text-sm sm:text-base sm:space-x-3">
                         <a href="#contact"
-                            className="text-white hover:bg-orange-600 hover:text-black duration-500 transition-all px-5 py-2 backdrop-blur-lg">VIEW RESUME</a>
+                            className="text-white hover:bg-orange-600 hover:text-black duration-500 transition-all sm:px-5 px-3 py-2 backdrop-blur-lg">VIEW RESUME</a>
                         <a href="mailto:joshuarazzi.garingo@gmail.com"
-                            className="text-black hover:bg-orange-600 duration-500 transition-all px-5 py-2 bg-white backdrop-blur-lg">LET'S TALK</a>
+                            className="text-black hover:bg-orange-600 duration-500 transition-all sm:px-5 px-3 py-2 bg-white backdrop-blur-lg">LET'S TALK</a>
                     </div>
                 </div>
             </nav >
-            <div className="w-full h-1 fixed top-20 z-40 
-                            bg-red-500        /* default for mobile */
-                            sm:bg-orange-500  /* small screens */
-                            md:bg-yellow-500  /* medium screens */
-                            lg:bg-green-500   /* large screens */
-                            xl:bg-blue-500    /* extra large screens */
-                            transition-colors duration-500">
-            </div>
         </>
     );
 };
