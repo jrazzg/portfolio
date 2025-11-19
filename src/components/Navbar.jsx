@@ -8,12 +8,11 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <>
-            <nav className="fixed w-full py-5 px-8 z-40 backdrop-blur-sm">
+            <nav className="fixed w-full py-5 px-6 sm:px-10 z-40 backdrop-blur-sm">
                 <div className="flex justify-between items-center">
                     <a href="#home">
                         <Logo className="w-10 h-10 fill-white hover:w-12 duration-500" />
                     </a>
-
                     <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
                         &#9776;
                     </div>
@@ -25,16 +24,15 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                     </div>
                 </div>
             </nav >
-
+            <div className="w-full h-1 fixed top-20 z-40 
+                            bg-red-500        /* default for mobile */
+                            sm:bg-orange-500  /* small screens */
+                            md:bg-yellow-500  /* medium screens */
+                            lg:bg-green-500   /* large screens */
+                            xl:bg-blue-500    /* extra large screens */
+                            transition-colors duration-500">
+            </div>
         </>
     );
 };
 export default Navbar;
-            // <div className="w-full h-1 fixed top-20 z-40 
-            //                 bg-red-500        /* default for mobile */
-            //                 sm:bg-orange-500  /* small screens */
-            //                 md:bg-yellow-500  /* medium screens */
-            //                 lg:bg-green-500   /* large screens */
-            //                 xl:bg-blue-500    /* extra large screens */
-            //                 transition-colors duration-500">
-            // </div>

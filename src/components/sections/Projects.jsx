@@ -52,7 +52,7 @@ const Projects = () => {
             >
             <motion.div
                 style={{ y, scale }}
-                className="flex justify-center items-center"
+                className="hidden md:flex justify-center items-center"// md:flex 
             >
                 <div className="flex flex-1 w-290 gap-10 h-[70vh]">
                     <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
