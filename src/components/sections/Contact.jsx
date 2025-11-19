@@ -1,7 +1,7 @@
 import RevealOnScroll from "../RevealOnScroll"
-import emailIcon from "../../assets/icons/email-new.svg"
-import githubIcon from "../../assets/icons/github.svg"
-import linkedinIcon from "../../assets/icons/linkedin.svg"
+import EmailIcon from "../../assets/icons/email-new.svg?react"
+import GithubIcon from "../../assets/icons/github.svg?react"
+import LinkedinIcon from "../../assets/icons/linkedin.svg?react"
 import Logo from "../../assets/logo.svg?react";
 
 const Contact = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
                             href="mailto:joshuarazzi.garingo@gmail.com"
                             className="flex items-center gap-2 duration-500 hover:bg-white pr-2"
                         >
-                            <img src={emailIcon} alt="email-icon" className="inline-block h-[2em] w-[2em]" />
+                            <EmailIcon className="inline-block h-[2em] w-[2em]" />
                             joshuarazzi.garingo@gmail.com
                         </a>
                         <a
@@ -24,7 +24,7 @@ const Contact = () => {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 duration-500 hover:bg-white pr-2"
                         >
-                            <img src={linkedinIcon} alt="linkedin-icon" className="inline-block h-[2em] w-[2em]" />
+                            <LinkedinIcon className="inline-block h-[2em] w-[2em]" />
                             LinkedIn
                         </a>
                         <a
@@ -33,7 +33,7 @@ const Contact = () => {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 duration-500 hover:bg-white pr-2"
                         >
-                            <img src={githubIcon} className="inline-block h-[2em] w-[2em]" />
+                            <GithubIcon className="inline-block h-[2em] w-[2em]" />
                             GitHub
                         </a>
                     </div>
