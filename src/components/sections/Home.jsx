@@ -15,7 +15,7 @@ const Home = () => {
                     </RevealOnScroll>
                     <RevealOnScroll>
                         <div className="flex flex-col gap-1 text-left text-sm mb-4
-                                        sm:text-base md:text-right md:mb-0">
+                                        sm:text-base md:text-right ">
                             <p className='text-white/40 ibm-mono uppercase'>// contact</p>
                             <a href="" className='hover:text-[#ff5900] duration-500'>joshuarazzi.garingo@gmail.com</a>
                             <a href="" className='hover:text-[#ff5900] duration-500'>LinkedIn</a>
