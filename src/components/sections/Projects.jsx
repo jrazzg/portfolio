@@ -3,11 +3,12 @@ import { useRef } from "react";
 import isoUlt from "../../assets/videos/iso_ult.mp4"
 import neonUlt from "../../assets/videos/neon_ult.mp4"
 import sovaUlt from "../../assets/videos/sova_ult.mp4"
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ name, vidSource, platform }) => {
+const ProjectCard = ({ name, vidSource, platform, projectPath }) => {
     return (
         // 340 × 656
-        <a href="#" className="relative block items-end rounded-[20px] border-10 border-white/10
+        <a href={projectPath} className="relative block items-end rounded-[20px] border-10 border-white/10
                                 min-w-[238px] min-h-[455px]                        
                                 md:w-[200px] h-[382px]
                                 lg:w-[272px] lg:h-[520px]
@@ -60,16 +61,17 @@ const Projects = () => {
                 className="hidden md:flex justify-center items-center"
             >
                 <div className="flex flex-1 gap-[2vw]">
-                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
-                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" />
-                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" />
+                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="#" />
+                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="#" />
+                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="#" />
                 </div>
             </motion.div>
             <div className="md:hidden flex flex-col sm:flex-row flex-wrap justify-center gap-[2vw]">
-                <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" />
-                <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" />
-                <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" />
+                <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="#" />
+                <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="#" />
+                <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="#" />
             </div>
+            <Link to="/ProjectsStatic" className="absolute bottom-0">Project</Link>
         </section>
     );
 };

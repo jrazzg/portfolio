@@ -2,7 +2,7 @@ import RevealOnScroll from "../RevealOnScroll"
 
 const ProjectsStatic = () => {
     return (
-            <section id="projects" className="min-h-screen py-20">
+            <section id="projects" className="min-h-screen bg-[#0b0b0b] py-20">
                 <RevealOnScroll>
                     <div className="max-w-5xl mx-auto px-4 mt-5">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
