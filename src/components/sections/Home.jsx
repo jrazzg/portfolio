@@ -18,7 +18,7 @@ const Home = () => {
                     </RevealOnScroll>
                     <div className="flex flex-col gap-2 text-left text-sm mb-4
                                         sm:text-base md:text-right ">
-                        <p className='text-white/40 ibm-mono uppercase'>// Let's connect</p>
+                        <p className='text-white/40 ibm-mono uppercase'>Let's connect</p>
                         <div className="flex gap-4 md:justify-end">
                             <a href="" className=''><EmailIcon className="inline-block h-[2em] w-[2em] fill-white hover:fill-[#ff5900] duration-500" /></a>
                             <a href="" className=''><LinkedinIcon className="inline-block h-[2em] w-[2em] fill-white hover:fill-[#ff5900] duration-500" /></a>
