@@ -71,7 +71,6 @@ const Projects = () => {
                 <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="/nddu-attendance" />
                 <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="/blaan-app" />
             </div>
-            <Link to="/project" className="absolute bottom-0">Project</Link>
         </section>
     );
 };
