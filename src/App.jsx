@@ -12,41 +12,30 @@ import { ReactLenis } from 'lenis/react';
 import JPGAttendance from './components/projects/JPGAttendance';
 import BlaanApp from './components/projects/BlaanApp';
 import NDDUAttendance from './components/projects/NDDUAttendance';
+import WithFooter from './components/WithFooter';
+import { keyframes } from 'framer-motion';
+
+const projectRoutes = [
+    { path: "/", element: <><Home /><ProjectsTransition /><Projects /><About /></> },
+    { path: "/jpg-attendance", element: <JPGAttendance /> },
+    { path: "/nddu-attendance", element: <NDDUAttendance /> },
+    { path: "/blaan-app", element: <BlaanApp /> },
+];
 
 function App() {
     return (
         <BrowserRouter>
-            <ReactLenis root />
-            <Navbar />
-            <Routes>
-                <Route path="/" element={
-                    <>
-                        <div className="min-h-screen transition-opacity duration-700 bg-[#0b0b0b] text-white relative z-10">
-                            <Home />
-                            <ProjectsTransition />
-                            <Projects />
-                            <About />
-                        </div>
-                        <footer className='sticky bottom-0'>
-                            <Contact />
-                        </footer>
-                    </>
-                } />
-                <Route path="/project" element={
-                    <>
-                        <div className="min-h-screen transition-opacity duration-700 bg-[#0b0b0b] text-white relative z-10">
-                            <ProjectsStatic />
-                        </div>
-                        <footer className='sticky bottom-0'>
-                            <Contact />
-                        </footer>
-                    </>
-                } />
-                <Route path="/jpg-attendance" element={<JPGAttendance/>} />
-                <Route path="/nddu-attendance" element={<NDDUAttendance/>} />
-                <Route path="/blaan-app" element={<BlaanApp/>} />
-                
-            </Routes>
+            <ReactLenis root>
+                <Navbar />
+                <Routes>
+                    {projectRoutes.map((project, index) => (
+                        <Route key={index} path={project.path} element={
+                            <WithFooter>{project.element}</WithFooter>
+                        } />
+                    ))
+                    }
+                </Routes>
+            </ReactLenis>
         </BrowserRouter>
     );
 }

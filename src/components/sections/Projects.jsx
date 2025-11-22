@@ -5,6 +5,12 @@ import neonUlt from "../../assets/videos/neon_ult.mp4"
 import sovaUlt from "../../assets/videos/sova_ult.mp4"
 import { Link } from "react-router-dom";
 
+const projects = [
+    { name: "JPG Attendance", vidSource: isoUlt, platform: "mobile", path: "/jpg-attendance" },
+    { name: "NDDU Attendance", vidSource: neonUlt, platform: "web", path: "/nddu-attendance" },
+    { name: "Blaan App", vidSource: sovaUlt, platform: "mobile", path: "/blaan-app" }
+];
+
 const ProjectCard = ({ name, vidSource, platform, projectPath }) => {
     return (
         // 340 × 656
@@ -61,15 +67,31 @@ const Projects = () => {
                 className="hidden md:flex justify-center items-center"
             >
                 <div className="flex flex-1 gap-[2vw]">
-                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="/jpg-attendance" />
-                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="/nddu-attendance" />
-                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="/blaan-app" />
+                    {
+                        projects.map((project, index) => (
+                            <ProjectCard
+                                key={index}
+                                name={project.name}
+                                vidSource={project.vidSource}
+                                platform={project.platform}
+                                projectPath={project.path}
+                            />)
+                        )
+                    }
                 </div>
             </motion.div>
             <div className="md:hidden flex flex-col sm:flex-row flex-wrap justify-center gap-[2vw]">
-                <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="jpg-attendance" />
-                <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="/nddu-attendance" />
-                <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="/blaan-app" />
+                {
+                    projects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            name={project.name}
+                            vidSource={project.vidSource}
+                            platform={project.platform}
+                            projectPath={project.path}
+                        />)
+                    )
+                }
             </div>
         </section>
     );
