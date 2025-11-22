@@ -32,10 +32,7 @@ function App() {
                 <Route path="/project" element={
                     <>
                         <div className="min-h-screen transition-opacity duration-700 bg-[#0b0b0b] text-white relative z-10">
-                            <Home />
-                            <ProjectsTransition />
-                            <Projects />
-                            <About />
+                            <ProjectsStatic />
                         </div>
                         <footer className='sticky bottom-0'>
                             <Contact />
@@ -43,7 +40,6 @@ function App() {
                     </>
                 } />
                 
-                <Route path="/ProjectsStatic" element={<ProjectsStatic />} />
             </Routes>
         </BrowserRouter>
     );
