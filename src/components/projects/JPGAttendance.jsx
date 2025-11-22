@@ -1,8 +1,8 @@
 const JPGAttendance = () => {
     return (
         <>
-        <div>
-            <h1>This is JPG Attendance</h1>
+        <div className="flex justify-center items-center h-screen">
+            <h1 className="text-white">This is JPG Attendance</h1>
         </div>
         </>
     )

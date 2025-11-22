@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+    background-color: #0b0b0b;
 }
 
 .reveal {

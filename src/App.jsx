@@ -9,6 +9,9 @@ import Projects from './components/sections/Projects';
 import About from './components/sections/About';
 import ProjectsStatic from "./components/sections/ProjectsStatic";
 import { ReactLenis } from 'lenis/react';
+import JPGAttendance from './components/projects/JPGAttendance';
+import BlaanApp from './components/projects/BlaanApp';
+import NDDUAttendance from './components/projects/NDDUAttendance';
 
 function App() {
     return (
@@ -39,6 +42,9 @@ function App() {
                         </footer>
                     </>
                 } />
+                <Route path="/jpg-attendance" element={<JPGAttendance/>} />
+                <Route path="/nddu-attendance" element={<NDDUAttendance/>} />
+                <Route path="/blaan-app" element={<BlaanApp/>} />
                 
             </Routes>
         </BrowserRouter>

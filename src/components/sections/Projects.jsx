@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({ name, vidSource, platform, projectPath }) => {
     return (
         // 340 × 656
-        <a href={projectPath} className="relative block items-end rounded-[20px] border-10 border-white/10
+        <Link to={projectPath} className="relative block items-end rounded-[20px] border-10 border-white/10
                                 min-w-[238px] min-h-[455px]                        
                                 md:w-[200px] h-[382px]
                                 lg:w-[272px] lg:h-[520px]
@@ -36,7 +36,7 @@ const ProjectCard = ({ name, vidSource, platform, projectPath }) => {
                     {platform}
                 </span>
             </div>
-        </a>
+        </Link>
     );
 }
 
@@ -61,15 +61,15 @@ const Projects = () => {
                 className="hidden md:flex justify-center items-center"
             >
                 <div className="flex flex-1 gap-[2vw]">
-                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="#" />
-                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="#" />
-                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="#" />
+                    <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="/jpg-attendance" />
+                    <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="/nddu-attendance" />
+                    <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="/blaan-app" />
                 </div>
             </motion.div>
             <div className="md:hidden flex flex-col sm:flex-row flex-wrap justify-center gap-[2vw]">
-                <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="#" />
-                <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="#" />
-                <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="#" />
+                <ProjectCard name="JPG Attendance" vidSource={isoUlt} platform="mobile" projectPath="jpg-attendance" />
+                <ProjectCard name="NDDU Attendance" vidSource={neonUlt} platform="web" projectPath="/nddu-attendance" />
+                <ProjectCard name="Blaan App" vidSource={sovaUlt} platform="mobile" projectPath="/blaan-app" />
             </div>
             <Link to="/project" className="absolute bottom-0">Project</Link>
         </section>

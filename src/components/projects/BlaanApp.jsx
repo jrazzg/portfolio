@@ -1,8 +1,8 @@
 const BlaanApp = () => {
     return (
         <>
-        <div>
-            <h1>This is Blaan App</h1>
+        <div className="flex justify-center items-center h-screen">
+            <h1 className="text-white">This is Blaan App</h1>
         </div>
         </>
     )
